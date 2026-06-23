@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Twin Agent System",
+  "description": "A collaborative dual-intelligence architecture where a Primary Agent generates creative content and a Twin Agent verifies and optimizes it.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

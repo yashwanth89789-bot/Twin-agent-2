@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: #05050a;
+  color: #ededed;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.mesh-gradient {
+  background: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+              radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+              radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.agent-line {
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0) 0%, rgba(59, 130, 246, 0.5) 50%, rgba(59, 130, 246, 0) 100%);
+}
+
+.markdown-body {
+  @apply text-sm leading-relaxed space-y-4 text-gray-300;
+}
+
+.markdown-body h1 {
+  @apply text-2xl font-bold text-white mt-8 mb-4 tracking-tight;
+}
+
+.markdown-body h2 {
+  @apply text-xl font-bold text-white mt-6 mb-3 tracking-tight;
+}
+
+.markdown-body h3 {
+  @apply text-lg font-semibold text-white mt-4 mb-2;
+}
+
+.markdown-body a {
+  @apply text-orange-400 hover:text-orange-300 hover:underline transition-colors;
+}
+
+.markdown-body p {
+  @apply mb-4 leading-7;
+}
+
+.markdown-body ul {
+  @apply list-disc list-inside space-y-1 mb-4 pl-4 marker:text-gray-500;
+}
+
+.markdown-body ol {
+  @apply list-decimal list-inside space-y-1 mb-4 pl-4 marker:text-gray-500;
+}
+
+.markdown-body li {
+  @apply leading-relaxed;
+}
+
+.markdown-body code {
+  @apply font-mono text-xs bg-[#111111] px-1.5 py-0.5 rounded border border-gray-800 text-orange-300;
+}
+
+.markdown-body pre {
+  @apply bg-[#0c0c0c] border border-gray-800 rounded-lg p-4 overflow-x-auto my-4;
+}
+
+.markdown-body pre code {
+  @apply px-0 py-0 bg-transparent border-0 text-gray-300 font-mono text-sm leading-relaxed;
+}
+
+.markdown-body blockquote {
+  @apply border-l-2 border-orange-500 pl-4 py-1 my-4 text-gray-400 italic bg-white/5;
+}
+
+.markdown-body hr {
+  @apply border-gray-800 my-8;
+}
+
+/* Scrollbar tweaks */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
