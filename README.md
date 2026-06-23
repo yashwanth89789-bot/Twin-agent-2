@@ -1,28 +1,47 @@
-# Remix: Twin Agent System
+# 🤖 Twin Agent System
 
-A collaborative dual-intelligence architecture where a Primary Agent generates creative content and a Twin Agent verifies and optimizes it.
+A collaborative dual-intelligence architecture where a **Primary Agent** generates creative content and a **Twin Agent** verifies and optimizes it.
 
-## Overview
+---
 
-The Twin Agent System is a sophisticated web-based application designed to bridge the gap between initial concept creation and polished output. By utilizing a dual-agent framework, it ensures that generated content not only meets the prompt requirements but also undergoes rigorous critique and refinement to achieve higher quality results.
+## 🏗️ Workflow
+The system follows a three-stage progressive refinement process:
 
-## Key Features
+1. **Primary Draft**: Initial content generation based on user prompt.
+2. **Rigorous Critique**: Secondary agent analysis for optimization.
+3. **Final Polish**: The refined, high-quality final output.
 
-- **Collaborative Architecture**: Uses a Primary Agent for drafting content and a Twin Agent for comprehensive verification and optimization.
-- **Multimodal Input**: Supports both text-based prompts and image uploads as base input.
-- **Voice Interaction**: Allows for seamless voice-to-text input to build prompts quickly.
-- **Progressive Refinement**: Visualizes the evolution from initial draft to critique, resulting in a finalized, high-quality output.
-- **Social Sharing**: Easily share the polished final results on various social media platforms.
+---
 
-## Technology Stack
+## ✨ Features
+- **Collaborative Intelligence**: Dual-agent pipeline for quality assurance.
+- **Multimodal Input**: Supports text and image-based prompts.
+- **Voice Enabled**: Seamless voice-to-text integration for quick drafting.
+- **Responsive UI**: Built with a modern, dark-themed, high-contrast aesthetic.
+- **One-Click Sharing**: Easily distribute results to social platforms.
 
-- **Framework**: React with TypeScript for the frontend.
-- **Build Tool**: Vite.
-- **Styling**: Tailwind CSS for a modern, high-contrast, professional interface.
-- **Animation**: Motion for smooth, intuitive transitions between agent states.
+---
 
-## Getting Started
+## 🛠️ Technology Stack
 
-1.  Ensure you have the required API keys configured as environment variables (`GEMINI_API_KEY`).
-2.  Install dependencies: `npm install`
-3.  Start the development server: `npm run dev`
+| Component | Technology |
+| :--- | :--- |
+| **Framework** | React 19 (TypeScript) |
+| **Build Tool** | Vite 6 |
+| **Styling** | Tailwind CSS |
+| **Animation** | Motion (`motion/react`) |
+| **Icons** | Lucide React |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+- Node.js installed.
+- Environment variable `GEMINI_API_KEY` configured.
+
+### 2. Setup
+```bash
+npm install
+npm run dev
+```
